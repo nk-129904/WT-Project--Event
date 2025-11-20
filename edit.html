@@ -1,63 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Edit Event — EventEase</title>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Edit Event — Admin</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="bg-slate-900 text-slate-100">
 
   <nav class="bg-slate-800/60 border-b border-slate-700">
     <div class="container mx-auto flex items-center justify-between py-3 px-3">
-      <div class="flex items-center gap-3">
-        <div class="rounded-full bg-sky-600 w-9 h-9 flex items-center justify-center font-bold">EE</div>
-        <span class="font-semibold">EventEase</span>
-      </div>
+      <div class="font-semibold">Admin • Edit</div>
       <div>
-        <a class="text-slate-200 hover:text-white" href="view.html">View</a>
-        <a class="text-sky-400 ml-3" href="admin/dashboard.html">Admin</a>
+        <a class="btn btn-outline-light btn-sm" href="manage.html">Back</a>
       </div>
     </div>
   </nav>
 
   <main class="container mx-auto px-4 py-8">
-    <nav aria-label="breadcrumb" class="mb-4">
-      <ol class="breadcrumb bg-slate-800/40 p-2 rounded">
-        <li class="breadcrumb-item"><a href="index.html" class="text-slate-300">Home</a></li>
-        <li class="breadcrumb-item"><a href="view.html" class="text-slate-300">Your Events</a></li>
-        <li class="breadcrumb-item active text-slate-100">Edit</li>
-      </ol>
-    </nav>
-
     <div class="max-w-2xl mx-auto">
       <div class="card-dark p-4">
-        <h3 class="text-xl font-semibold mb-3">Edit Event</h3>
+        <h4 class="mb-3">Edit Event</h4>
 
-        <div id="alertPlaceholderEdit"></div>
-
-        <form id="editForm">
+        <form id="adminEditForm">
           <div class="mb-3">
             <label class="form-label">Title</label>
-            <input id="editTitle" type="text" class="form-control dark-input">
+            <input id="aTitle" class="form-control dark-input">
           </div>
-
           <div class="mb-3">
             <label class="form-label">Date</label>
-            <input id="editDate" type="date" class="form-control dark-input">
+            <input id="aDate" type="date" class="form-control dark-input">
           </div>
-
           <div class="mb-3">
             <label class="form-label">Description</label>
-            <textarea id="editDesc" class="form-control dark-input" rows="3"></textarea>
+            <textarea id="aDesc" class="form-control dark-input" rows="3"></textarea>
           </div>
-
           <div class="flex gap-2">
-            <button type="submit" class="btn btn-primary">Update</button>
-            <a class="btn btn-outline-light" href="view.html">Cancel</a>
+            <button class="btn btn-primary" type="submit">Update</button>
+            <a class="btn btn-outline-light" href="manage.html">Cancel</a>
           </div>
         </form>
 
@@ -66,6 +48,6 @@
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/app.js"></script>
+  <script src="../assets/js/admin.js"></script>
 </body>
 </html>
